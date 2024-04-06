@@ -23,6 +23,7 @@ header.timeZone {
 }
 .input{
     background-color: aliceblue;
+    border: black;
 }
 
 /* MAIN */
@@ -35,12 +36,6 @@ header.timeZone {
     opacity: 20%;
 }
 
-.dateSearch {
-    max-width: 600px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20px; /* Ajusta el espacio entre los elementos y los bordes de la página */
-}
 
 .infoCity {
     display: flex;
@@ -51,19 +46,33 @@ header.timeZone {
     margin-right: 10px;
 }
 
-.infoData img,
-.infoData h3 {
-    margin-bottom: 5px; /* Ajusta el margen inferior de las imágenes y los títulos */
+.dateSearch {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px; /* Ajusta el espacio entre los elementos y los bordes de la página */
 }
 
-.infoData div,
-.infoData p.temp-feels {
-    margin-top: 5px; /* Ajusta el margen superior de los párrafos y los divs */
+.infoData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+table{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
+td{
+    text-align: left;
+    padding: 10px;
+}
 
-
-
+.temp-feels{
+    text-align: left;
+}
 
 /* FOOTER*/
 
@@ -86,20 +95,17 @@ header.timeZone {
 /*MEDIA QUERY*/
 
 @media screen and (max-width: 800px) {
-    /* Estilos específicos para pantallas con un ancho menor a 500px */
+    /* Estilos específicos para pantallas con un ancho menor a 800px */
     .dateSearch {
         flex-direction: column; /* Cambiar a dirección de columna */
     }
-    .infoCity{
+    .infoCity {
         padding: 5px;
         justify-content: center;
     }
     .linea {
         padding: 5px 0px 5px 0px;
         border-top: 1px solid black; /* Una línea sólida de 1 píxel de grosor y color negro */
-    }
-    table {
-        margin: auto;
     }
     .infoData img,
     .infoData h3,
@@ -109,6 +115,7 @@ header.timeZone {
         margin: 0; /* Eliminar todos los márgenes */
     }
 }
+
 
 @media screen and (max-width: 1000px) {
     body {
