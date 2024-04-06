@@ -50,19 +50,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 												<img class="" src="src/image/${timeDay}" alt="tipo-cloud">
 												<h3>${tipo}</h3>
 											</div>
+											<table>
+												<tbody>
+													<tr>
+														<td>Temperatura:</td>
+														<td>${temperatura} C°</td>
+													</tr>
+													<tr>
+														<td>Sensación:</td>
+														<td>${feel} C°</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
-										<table>
-											<tbody>
-												<tr>
-													<td>Temperatura:</td>
-													<td>${temperatura} C°</td>
-												</tr>
-												<tr>
-													<td>Sensación:</td>
-													<td>${feel} C°</td>
-												</tr>
-											</tbody>
-										</table>
 										<div class="linea"></div>
 										<table>
 											<tbody class="infoTime">

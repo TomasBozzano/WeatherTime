@@ -69,6 +69,9 @@ td{
     text-align: left;
     padding: 10px;
 }
+.infoTime{
+    padding: 25px;
+}
 
 .temp-feels{
     text-align: left;
