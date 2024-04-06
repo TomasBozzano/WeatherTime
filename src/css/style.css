@@ -1,0 +1,119 @@
+/* BODY */
+
+body{
+    font-family: monospace, sans-serif;
+}
+/* HEADER */
+
+.tittle{
+    text-align: center;
+    font-size: 50px;
+    background: -webkit-linear-gradient(#3539a2, #969a9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header.timeZone {
+    background: rgb(53, 57, 162);
+    background: radial-gradient(circle, rgba(53, 57, 162, 1) 0%, rgba(208, 209, 240, 1) 0%, rgba(115, 158, 213, 1) 66%);
+    padding: 15px;
+    margin: 25px auto; /* Centra horizontalmente */
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* MAIN */
+
+.dateInput{
+    display: flex;
+    justify-content: center;
+}
+.search-icon:hover{
+    opacity: 20%;
+}
+
+.dateSearch {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px; /* Ajusta el espacio entre los elementos y los bordes de la página */
+}
+
+.infoCity {
+    display: flex;
+    align-items: center;
+}
+
+.infoCity img {
+    margin-right: 10px;
+}
+
+.infoData img,
+.infoData h3 {
+    margin-bottom: 5px; /* Ajusta el margen inferior de las imágenes y los títulos */
+}
+
+.infoData div,
+.infoData p.temp-feels {
+    margin-top: 5px; /* Ajusta el margen superior de los párrafos y los divs */
+    align-items: center;
+}
+
+
+
+
+/* FOOTER*/
+
+.infoAbout{
+    display: flex;
+    padding: 15px;
+    margin: 20px;
+    justify-content: center;
+}
+.aboutMe{
+    padding: auto;
+}
+.link{
+    margin: 10px;
+}
+.link:hover{
+    opacity: 20%;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 500px) {
+    /* Estilos específicos para pantallas con un ancho menor a 500px */
+    .dateSearch {
+        flex-direction: column; /* Cambiar a dirección de columna */
+    }
+    .infoCity{
+        padding: 5px;
+        justify-content: center;
+    }
+    .linea {
+        padding: 5px 0px 5px 0px;
+        border-top: 1px solid black; /* Una línea sólida de 1 píxel de grosor y color negro */
+    }
+    table {
+        margin: auto;
+    }
+    .infoData img,
+    .infoData h3,
+    .infoData div,
+    .infoData p.temp-feels {
+        padding: 5px;
+        margin: 0; /* Eliminar todos los márgenes */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+      font-size: 14px; /* Cambia el tamaño de la fuente en pantallas más pequeñas */
+    }
+  
+    .container {
+      width: 90%; /* Redimensiona el ancho del contenedor principal */
+    }
+  }
+  
