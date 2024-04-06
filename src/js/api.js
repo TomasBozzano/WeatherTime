@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 				detail.innerHTML = `<div class="dateSearch">
 										<div class="timeDate">
 											<div class="infoCity">
-												<img src="image/map.svg" alt="Ubication">
+												<img src="src/image/map.svg" alt="Ubication">
 												<h2 class="city">${data.name}, ${data.sys.country}</h2>
 											</div>
 											<div class="infoData">
-												<img class="" src="image/${timeDay}" alt="tipo-cloud">
+												<img class="" src="src/image/${timeDay}" alt="tipo-cloud">
 												<h3>${tipo}</h3>
 												<div>
 													<p class="temp">Temperatura: ${temperatura} C°</p>
