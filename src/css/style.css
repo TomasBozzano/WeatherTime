@@ -21,6 +21,9 @@ header.timeZone {
     max-width: 600px;
     text-align: center;
 }
+.input{
+    background-color: aliceblue;
+}
 
 /* MAIN */
 
@@ -82,7 +85,7 @@ header.timeZone {
 
 /*MEDIA QUERY*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     /* Estilos específicos para pantallas con un ancho menor a 500px */
     .dateSearch {
         flex-direction: column; /* Cambiar a dirección de columna */
