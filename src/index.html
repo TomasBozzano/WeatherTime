@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/icon.svg" type="image/x-icon">
+    <title>Clima - Localidad</title>
+</head>
+
+<body>
+    <h1 class="tittle">Bienvenidos a BTime</h1>
+    <header class="timeZone">
+        <div class="dateInput">
+            <input name="ciudad" type="search" placeholder="Ingrese su ciudad...">
+            <button id="search-button"><img class="search-icon" src="image/cloud.svg" alt="Search"></button>
+        </div>
+        <main id="dateSearch">
+            <div class="dateSearch">
+                <div class="timeDate">
+                    <div class="infoCity">
+                        <img src="image/map.svg" alt="Ubication">
+                        <h2 class="city">Ciudad, País</h2>
+                    </div>
+                    <div class="infoData">
+                        <img class="time" src="image/cloud-time.svg" alt="tipo-cloud">
+                        <div>
+                            <p class="temp">Temperatura: C°</p>
+                            <p class="temp-feels">Sensación: C°</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="linea"></div>
+                <table>
+                    <tbody class="infoTime">
+                        <tr>
+                            <td>Humedad:</td>
+                            <td>Porcentaje %</td>
+                        </tr>
+                        <tr>
+                            <td>Presión:</td>
+                            <td> hPa</td>
+                        </tr>
+                        <tr>
+                            <td>Viento:</td>
+                            <td> Km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Visibilidad:</td>
+                            <td> KM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </header>
+    <footer class="infoAbout">
+        <p class="aboutMe">Created by @TomasBozzano</p>
+        <a class="link" href="https://github.com/TomasBozzano" target="_blank" rel="noopener noreferrer"><img
+                src="image/git.svg" alt="GITHUB"></a>
+        <a class="link" href="https://www.linkedin.com/in/tomasbozzano" target="_blank" rel="noopener noreferrer"><img
+                src="image/linkedin.svg" alt="LINKEDIN"></a>
+    </footer>
+    
+    <script></script>
+    <!--<script src="js/city.js"></script>-->
+    <script src="js/api.js"></script>
+</body>
+
+</html>
