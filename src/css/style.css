@@ -18,7 +18,6 @@ header.timeZone {
     padding: 15px;
     margin: 25px auto; /* Centra horizontalmente */
     border-radius: 15px;
-    max-width: 600px;
     text-align: center;
 }
 .input{
