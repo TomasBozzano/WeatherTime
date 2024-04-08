@@ -173,6 +173,7 @@ td{
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-left: 30px;
     }
     .time{
         padding: 10px;
