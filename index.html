@@ -17,7 +17,7 @@
             <input name="ciudad" type="search" placeholder="Ingrese su ciudad...">
             <button id="search-button"><img class="search-icon" src="src/image/cloud.svg" alt="Search"></button>
         </div>
-        <main id="dateSearch">
+        <main id="Search">
             <div class="dateSearch">
                 <div class="timeDate">
                     <div class="infoCity">
@@ -25,43 +25,32 @@
                         <h2 class="city">Ciudad, País</h2>
                     </div>
                     <div class="infoData">
+                        <p class="temp">°C </p>
                         <img class="time" src="src/image/cloud-time.svg" alt="tipo-cloud">
                     </div>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Temperatura:</td>
-                                <td> C°</td>
-                            </tr>
-                            <tr>
-                                <td>Sensación:</td>
-                                <td>C°</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h3 class="tipo">tipo</h3>
                     <div class="linea"></div>
                 </div>
                 <table>
                     <tbody class="infoTime">
                         <tr>
                             <td>Humedad:</td>
-                            <td>%</td>
+                            <td class="infoTimeValor">%</td>
                         </tr>
                         <tr>
                             <td>Presión:</td>
-                            <td> hPa</td>
+                            <td class="infoTimeValor"> hPa</td>
                         </tr>
                         <tr>
                             <td>Viento:</td>
-                            <td> Km/h</td>
+                            <td class="infoTimeValor"> Km/h</td>
                         </tr>
                         <tr>
                             <td>Visibilidad:</td>
-                            <td> KM</td>
+                            <td class="infoTimeValor"> KM</td>
                         </tr>
                     </tbody>
                     </table>
-                </div>
             </div>
         </main>
     </header>

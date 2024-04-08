@@ -38,20 +38,20 @@ function obtenerDatosClima(datosGet) {
 const results = async () => {
 	var kelvin = 273
 	const city = document.querySelector('[name=ciudad]').value
-	const dateSearch = document.getElementById('dateSearch')
+	const dateSearch = document.getElementById('Search')
 	city.innerHTML = ''
 	dateSearch.innerHTML = ''
 	if (city !== '') {
 		try {
 			const data = await obtenerDatosClima(city);
 			const temp = data.main.temp - kelvin;
-			const feels = data.main.feels_like - kelvin;
+			const wint = data.wind.speed
 			const visibility = data.visibility / 1000;
 			const time = data.weather[0].main;
 			let timeDay;
 			let tipo;
-			const temperatura = Number(temp.toFixed(2));
-			const feel = Number(feels.toFixed(2));
+			const temperatura = Number(temp.toFixed(0))
+			const viento = Number(wint.toFixed(0))
 
 			if (time === 'Clear') {
 				timeDay = 'sun-time.svg';
@@ -67,52 +67,40 @@ const results = async () => {
 				tipo = 'Vientos';
 			}
 
-			const detail = document.createElement('summary');
-			detail.innerHTML = `<div class="dateSearch">
-										<div class="timeDate">
+			const detail = document.createElement('div')
+			detail.className+="dateSearch"
+			detail.innerHTML = `		<div class="timeDate">
 											<div class="infoCity">
 												<img src="src/image/map.svg" alt="Ubication">
 												<h2 class="city">${data.name}, ${data.sys.country}</h2>
 											</div>
 											<div class="infoData">
+												<p class="temp">${temperatura}°</p>
 												<img class="" src="src/image/${timeDay}" alt="tipo-cloud">
-												<h3>${tipo}</h3>
 											</div>
-											<table>
-												<tbody>
-													<tr>
-														<td>Temperatura:</td>
-														<td>${temperatura} C°</td>
-													</tr>
-													<tr>
-														<td>Sensación:</td>
-														<td>${feel} C°</td>
-													</tr>
-												</tbody>
-											</table>
+											<h3>${tipo}</h3>
 										</div>
 										<div class="linea"></div>
 										<table>
 											<tbody class="infoTime">
 												<tr>
 													<td>Humedad:</td>
-													<td>${data.main.humidity}%</td>
+													<td class="infoTimeValor">${data.main.humidity} %</td>
 												</tr>
 												<tr>
 													<td>Presión:</td>
-													<td>${data.main.pressure} hPa</td>
+													<td class="infoTimeValor">${data.main.pressure} hPa</td>
 												</tr>
 												<tr>
 													<td>Viento:</td>
-													<td>${data.wind.speed} Km/h</td>
+													<td class="infoTimeValor">${viento} Km/h</td>
 												</tr>
 												<tr>
 													<td>Visibilidad:</td>
-													<td>${visibility} KM</td>
+													<td class="infoTimeValor">${visibility} KM</td>
 												</tr>
 											</tbody>
-										</table>
-									</div>`;
+										</table>`;
 			dateSearch.appendChild(detail);
 		} catch (error) {
 			alert('La ciudad que está buscando no se encuentra disponible. Por favor, escriba nuevamente una ciudad válida.');
