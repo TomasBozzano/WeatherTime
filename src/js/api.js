@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', async () => {
-
+	const dato = document.querySelector('[name=ciudad]')
 	const search = document.getElementById("search-button")
+	
 	search.addEventListener('click', async (e) => {
 		e.preventDefault()
 		results()
+		dato.value = ""
+
 	})
 
-	const dato = document.querySelector('[name=ciudad]')
 	dato.addEventListener('keyup', (event) => {
 		if (event.key === 'Enter') {
 			results();
+			dato.value = ""
 		}
 	})
 
@@ -39,7 +42,6 @@ const results = async () => {
 	var kelvin = 273
 	const city = document.querySelector('[name=ciudad]').value
 	const dateSearch = document.getElementById('Search')
-	city.innerHTML = ''
 	dateSearch.innerHTML = ''
 	if (city !== '') {
 		try {
