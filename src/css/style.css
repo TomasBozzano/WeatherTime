@@ -35,7 +35,6 @@ header.timeZone {
     opacity: 20%;
 }
 
-
 .infoCity {
     display: flex;
     align-items: center;
@@ -127,22 +126,26 @@ td{
         justify-content: center;
         align-items: center;
         padding: 10px;
-
+    }
+    .infoCity{
+        margin-right: 10px;
     }
     .linea {
         width: 100%;
         padding: 5px 0px 5px 0px;
         border-top: 1px solid black; /* Una línea sólida de 1 píxel de grosor y color negro */
     }
-    .infoData img,
-    .infoData h3,
-    .infoData div,
-    .infoData {
-        padding: 5px;
-        margin: 0; /* Eliminar todos los márgenes */
+    .infoData{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .temp{
         margin-left: 15px;
+    }
+    table{
+        display: flex;
+        margin-left: 10px;
     }
     footer{
         display: flex;
@@ -158,7 +161,6 @@ td{
     }
   
     .dateSearch {
-      width: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -174,9 +176,6 @@ td{
     }
     .time{
         padding: 10px;
-    }
-    .infoTime{
-        margin-right: 50px;
     }
     table{
         padding: 10px 0px 10px 0px;
