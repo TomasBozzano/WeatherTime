@@ -19,6 +19,7 @@ header.timeZone {
     margin: 25px auto; /* Centra horizontalmente */
     border-radius: 15px;
     text-align: center;
+    max-width: 600px;
 }
 .input{
     background-color: aliceblue;
@@ -164,9 +165,6 @@ td{
       display: flex;
       justify-content: space-around;
       align-items: center;
-    }
-    .timeDate{
-        margin-left: 50px;
     }
     .infoData{
         display: flex;
