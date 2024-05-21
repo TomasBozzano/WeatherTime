@@ -8,4 +8,9 @@ Esta aplicación está diseñada para consumir datos meteorológicos de cada ciu
 - CSS
 - JavaScript (Vanilla)
 
+## Visualización
+
+[![Screenshot-2.png](https://i.postimg.cc/zvjr43Hv/Screenshot-2.png)](https://postimg.cc/vxckVYzw)
+
+### Link
 Puedes verta en el siguiente link -> https://tomgb-weather.zeabur.app/
